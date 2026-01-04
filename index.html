@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarePlus Pharmacy | Your Health, Our Priority</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+	 <link rel='preload'  media="all"  href="/sites/default/files/css/css_5AHBwVVjli2hRWzNoZH6ZTMo0XuPu6A3RTXoO8nl4tQ.css" as='style' onload="this.rel='stylesheet'"  /><noscript><link rel="stylesheet" media="all" href="/sites/default/files/css/css_5AHBwVVjli2hRWzNoZH6ZTMo0XuPu6A3RTXoO8nl4tQ.css" /></noscript>
+<link rel='preload'  media="all"  href="/sites/default/files/css/css_KoDueR1ExBibSNZJ3IKz8k-XkVqBZzBf_MfUN6O6EuI.css" as='style' onload="this.rel='stylesheet'"  /><noscript><link rel="stylesheet" media="all" href="/sites/default/files/css/css_KoDueR1ExBibSNZJ3IKz8k-XkVqBZzBf_MfUN6O6EuI.css" /></noscript>
+<link rel='preload'  media="all"  href="/sites/default/files/css/css_T-R4USQjdpK1B0WVDLRaW-NFiCfL_jtI6zimbvW4-t0.css" as='style' onload="this.rel='stylesheet'"  /><noscript><link rel="stylesheet" media="all" href="/sites/default/files/css/css_T-R4USQjdpK1B0WVDLRaW-NFiCfL_jtI6zimbvW4-t0.css" /></noscript>
+<link rel='preload'  media="all"  href="/sites/default/files/css/css_Pm_a3xDumNEP3NTg9xnYKIE2BXDaGC6N8olzf-KbZ2U.css" as='style' onload="this.rel='stylesheet'"  /><noscript><link rel="stylesheet" media="all" href="/sites/default/files/css/css_Pm_a3xDumNEP3NTg9xnYKIE2BXDaGC6N8olzf-KbZ2U.css" /></noscript>
+<link rel="stylesheet" media="all" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" />
+<link rel='preload'  media="all"  href="/sites/default/files/css/css_JNZLOjDpG_v9CHHO3_45bgDLxgHe_OcYSsuSGKhhMiA.css" as='style' onload="this.rel='stylesheet'"  /><noscript><link rel="stylesheet" media="all" href="/sites/default/files/css/css_JNZLOjDpG_v9CHHO3_45bgDLxgHe_OcYSsuSGKhhMiA.css" /></noscript>
+
+    <style>
+	/* --- Banner Slider --- */
+    .slider-container {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+    }
+
+    .slides {
+        display: flex;
+        width: 300%; /* 3 slides = 300% */
+        height: 100%;
+        transition: transform 0.8s ease-in-out;
+        animation: slideTransition 15s infinite;
+    }
+
+    .slide {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Background Placeholders */
+    .slide:nth-child(1) { background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1586015555751-63bb77f4322a?auto=format&fit=crop&q=80&w=1600'); }
+    .slide:nth-child(2) { background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=1600'); }
+    .slide:nth-child(3) { background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1587854692152-cbe660dbbb88?auto=format&fit=crop&q=80&w=1600'); }
+
+    .slide-content {
+        text-align: center;
+        color: white;
+        padding: 20px;
+        max-width: 800px;
+    }
+
+    .slide-content h2 {
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+
+    .slide-content p {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    /* Animation Logic */
+    @keyframes slideTransition {
+        0%, 28% { transform: translateX(0); }
+        33%, 61% { transform: translateX(-33.33%); }
+        66%, 95% { transform: translateX(-66.66%); }
+        100% { transform: translateX(0); }
+    }
+
+    @media (max-width: 768px) {
+        .slider-container { height: 350px; }
+        .slide-content h2 { font-size: 2rem; }
+        .slide-content p { font-size: 1.1rem; }
+    }
+        :root {
+            --primary-blue: #0056b3;
+            --secondary-green: #28a745;
+            --dark-text: #2d3436;
+            --light-bg: #f8f9fa;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-text);
+            background-color: var(--white);
+        }
+
+        /* --- Global Components --- */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-blue { background: var(--primary-blue); color: white; }
+        .btn-blue:hover { background: #003d7e; }
+        
+        .btn-green { background: var(--secondary-green); color: white; }
+        .btn-green:hover { background: #218838; }
+
+        /* --- Header --- */
+        header {
+            background: var(--white);
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark-text);
+            font-weight: 500;
+        }
+
+		/* Mobile Menu Toggle Button - Hidden on Desktop */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 10px;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--primary-blue);
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex; /* Show hamburger on mobile */
+    }
+
+    .nav-links {
+        display: none; /* Hidden by default on mobile */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        gap: 15px;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show when toggled */
+    }
+
+    .nav-cta {
+        display: none; /* Keep CTA button hidden on mobile nav to save space */
+    }
+}
+
+        /* --- Hero Section --- */
+        .hero {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #eef2f7 0%, #ffffff 100%);
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: var(--primary-blue);
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #636e72;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* --- Search Bar --- */
+        .search-container {
+            margin-top: 40px;
+            max-width: 600px;
+            margin-inline: auto;
+            display: flex;
+            gap: 10px;
+        }
+
+        .search-container input {
+            flex: 1;
+            padding: 15px;
+            border: 2px solid #dfe6e9;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        /* --- Features Grid --- */
+        .features {
+            padding: 80px 0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 40px;
+            background: var(--light-bg);
+            border-radius: 12px;
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        /* --- Footer --- */
+        footer {
+            background: #2d3436;
+            color: white;
+            padding: 60px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 20px;
+            color: var(--secondary-green);
+        }
+
+        .footer-section p, .footer-section a {
+            color: #bdc3c7;
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .copyright {
+            text-align: center;
+            border-top: 1px solid #444;
+            padding-top: 20px;
+            font-size: 0.8rem;
+            color: #7f8c8d;
+        }
+
+        /* --- Responsive --- */
+        @media (max-width: 768px) {
+            .nav-links, .nav-cta { display: none; }
+            .hero h1 { font-size: 2.2rem; }
+            .search-container { flex-direction: column; padding: 0 20px; }
+        }
+		
+		
+		/* --- Sticky Sidebar Form with Toggle --- */
+.sticky-wrapper {
+    position: fixed;
+    right: -320px; /* Hidden by default */
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: flex-start;
+    transition: right 0.4s ease-in-out;
+    z-index: 2000;
+}
+
+.sticky-wrapper.active {
+    right: 0; /* Slide in */
+}
+
+/* The vertical tab button */
+.sticky-tab {
+    background: var(--primary-blue);
+    color: white;
+    padding: 15px 10px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    cursor: pointer;
+    border-radius: 8px 0 0 8px;
+    font-weight: 600;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+}
+
+.sticky-form-content {
+    background: var(--white);
+    width: 320px;
+    padding: 30px;
+    box-shadow: -5px 0 20px rgba(0,0,0,0.1);
+    border-left: 4px solid var(--secondary-green);
+}
+
+.close-btn {
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+    color: #999;
+}
+
+@media (max-width: 600px) {
+    .sticky-wrapper { display: none; } /* Hide on small phones */
+}
+
+/* --- Footer Form --- */
+.footer-form input, .footer-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #444;
+    color: white;
+}
+
+.footer-form input::placeholder { color: #bbb; }
+
+/* Adjust footer grid to 3 columns to fit form */
+.footer-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+
+
+
+/* Hide the mobile form container by default (Desktop) */
+.mobile-only-form {
+    display: none;
+    padding: 30px 20px;
+    background-color: var(--light-bg);
+}
+
+/* Show the form only on screens smaller than 768px */
+@media (max-width: 768px) {
+    .mobile-only-form {
+        display: block;
+        border-top: 2px solid var(--primary-blue);
+    }
+    
+    /* Optional: If you want to hide the FOOTER form on mobile to avoid duplication */
+    .footer-form {
+        display: none;
+    }
+}
+
+
+<!-- FAQ -->
+.faq-section {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.faq-item {
+    border-bottom: 1px solid #eee;
+    padding: 20px 0;
+}
+
+.faq-question {
+    font-weight: 600;
+    color: var(--primary-blue);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq-answer {
+    margin-top: 10px;
+    color: #666;
+    display: none; /* Hidden until clicked */
+}
+
+
+/* Logo Carousel Container */
+.logo-slider {
+    padding: 40px 0;
+    background: white;
+    overflow: hidden;
+    position: relative;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.logo-slider h3 {
+    text-align: center;
+    color: #999;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+/* The track that moves */
+.logo-track {
+    display: flex;
+    width: calc(250px * 10); /* Adjust based on number of logos */
+    animation: scroll 20s linear infinite;
+}
+
+.logo-track:hover {
+    animation-play-state: paused; /* Pauses on hover so users can look closer */
+}
+
+.logo-item {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-item img {
+    height: 50px;
+    filter: grayscale(100%); /* Makes logos look uniform and professional */
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.logo-item img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+/* The Animation */
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-250px * 5)); } /* Moves by half the total track width */
+}
+
+@media (max-width: 768px) {
+    .logo-item { width: 150px; }
+    @keyframes scroll {
+        100% { transform: translateX(calc(-150px * 5)); }
+    }
+}
+		
+    </style>
+</head>
+<body>
+
+   <header>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <img src="assets/logo_transparent.png" width="10%" alt="Logo" class="logo-img">
+            </div>
+
+            <button class="menu-toggle" id="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Prescriptions</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+
+            
+        </nav>
+    </div>
+</header>
+<div class="slider-container">
+    <div class="slides">
+        <div class="slide">
+            <div class="slide-content">
+                <h2>Vaccinations Made Easy</h2>
+                <p>Book your flu shot or wellness screening online in seconds.</p>
+                <a href="#" class="btn btn-green">Schedule Now</a>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="slide-content">
+                <h2>Premium Skincare Range</h2>
+                <p>Discover dermatologist-approved products for your daily routine.</p>
+                <a href="#" class="btn btn-blue">Shop Beauty</a>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="slide-content">
+                <h2>Manage Family Health</h2>
+                <p>One dashboard for all your family's prescription needs.</p>
+                <a href="#" class="btn btn-green">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+    <section class="hero">
+        <div class="container">
+            <h1>Your Health, Our Priority</h1>
+            <p>Reliable healthcare delivered to your doorstep. Consult with expert pharmacists and manage your refills online with ease.</p>
+            <a href="#" class="btn btn-green">Order Now</a>
+            
+            <div class="search-container">
+                <input type="text" placeholder="Find your medication (e.g., Aspirin, Vitamins)...">
+                <button class="btn btn-blue">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="features container">
+        <div class="grid">
+            <div class="feature-card">
+                <span class="icon">🚚</span>
+                <h3>Fast Delivery</h3>
+                <p>Same-day delivery for local orders placed before 2 PM.</p>
+            </div>
+            <div class="feature-card">
+                <span class="icon">👨‍⚕️</span>
+                <h3>Expert Pharmacists</h3>
+                <p>Our licensed team is available 24/7 for consultations.</p>
+            </div>
+            <div class="feature-card">
+                <span class="icon">📱</span>
+                <h3>Online Refills</h3>
+                <p>Manage and track your prescriptions via our mobile app.</p>
+            </div>
+        </div>
+    </section>
+	
+	<section class="logo-slider">
+    <h3>Trusted by Leading Insurance & Health Partners</h3>
+  <div class="logo-track">
+    <div class="logo-item">
+        <img src="https://placehold.jp/24/0056b3/ffffff/200x80.png?text=Aetna+Health" alt="Aetna" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <span style="display:none; font-weight:bold; color:#0056b3;">AETNA</span>
+    </div>
+    <div class="logo-item">
+        <img src="https://placehold.jp/24/28a745/ffffff/200x80.png?text=Cigna+Care" alt="Cigna" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <span style="display:none; font-weight:bold; color:#28a745;">CIGNA</span>
+    </div>
+    <div class="logo-item">
+        <img src="https://placehold.jp/24/0056b3/ffffff/200x80.png?text=Pfizer+Med" alt="Pfizer" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <span style="display:none; font-weight:bold; color:#0056b3;">PFIZER</span>
+    </div>
+    <div class="logo-item">
+        <img src="https://placehold.jp/24/28a745/ffffff/200x80.png?text=United+Health" alt="UHG" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <span style="display:none; font-weight:bold; color:#28a745;">UHG</span>
+    </div>
+
+    <div class="logo-item">
+        <img src="https://placehold.jp/24/0056b3/ffffff/200x80.png?text=Aetna+Health" alt="Aetna" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <span style="display:none; font-weight:bold; color:#0056b3;">AETNA</span>
+    </div>
+    <div class="logo-item">
+        <img src="https://placehold.jp/24/28a745/ffffff/200x80.png?text=Cigna+Care" alt="Cigna" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <span style="display:none; font-weight:bold; color:#28a745;">CIGNA</span>
+    </div>
+    <div class="logo-item">
+        <img src="https://placehold.jp/24/0056b3/ffffff/200x80.png?text=Pfizer+Med" alt="Pfizer" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <span style="display:none; font-weight:bold; color:#0056b3;">PFIZER</span>
+    </div>
+    <div class="logo-item">
+        <img src="https://placehold.jp/24/28a745/ffffff/200x80.png?text=United+Health" alt="UHG" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <span style="display:none; font-weight:bold; color:#28a745;">UHG</span>
+    </div>
+</div>
+</section>
+	
+	
+	<section class="mobile-only-form">
+    <div class="container">
+        <h3 style="color: var(--primary-blue); margin-bottom: 15px;">Contact Our Pharmacists</h3>
+        <p style="margin-bottom: 20px; font-size: 0.9rem;">Have a question? Send us a message and we'll reply within 30 minutes.</p>
+        
+        <form>
+            <div style="margin-bottom: 15px;">
+                <label style="display:block; font-size: 0.8rem; font-weight: 600;">Full Name</label>
+                <input type="text" placeholder="John Doe" required style="width:100%; padding:12px; border:1px solid #ddd; border-radius:5px;">
+            </div>
+            
+            <div style="margin-bottom: 15px;">
+                <label style="display:block; font-size: 0.8rem; font-weight: 600;">Email Address</label>
+                <input type="email" placeholder="john@example.com" required style="width:100%; padding:12px; border:1px solid #ddd; border-radius:5px;">
+            </div>
+            
+            <div style="margin-bottom: 15px;">
+                <label style="display:block; font-size: 0.8rem; font-weight: 600;">Phone Number</label>
+                <input type="tel" placeholder="(555) 000-0000" required style="width:100%; padding:12px; border:1px solid #ddd; border-radius:5px;">
+            </div>
+            
+            <button type="submit" class="btn btn-green" style="width:100%; padding: 15px;">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<section class="faq-section container">
+    <h2 style="text-align: center; margin-bottom: 40px;">Frequently Asked Questions</h2>
+    
+    <div class="faq-item">
+        <div class="faq-question" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block'">
+            Do you accept all major insurance plans? <span>+</span>
+        </div>
+        <div class="faq-answer">Yes, we work with most major insurance providers. Please bring your card or upload a photo via our app.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block'">
+            How fast is your home delivery? <span>+</span>
+        </div>
+        <div class="faq-answer">We offer same-day delivery for local orders placed before 2:00 PM. All other orders are delivered within 24 hours.</div>
+    </div>
+</section>
+
+
+<section class="reusable-section-one">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                        
+           <div class="great-place-wrapper">
+<div class="reusable-section-one-content">
+<div class="section-heading visible" style="opacity: 1; visibility: inherit;">
+<h2>Cipla, a Great Place to Work</h2>
+
+<p>Our endeavour is to build a high performance and meritocratic work culture with care as the cornerstone.</p>
+</div>
+
+<div class="multiple-btn-group"><a alt="Opening Positions" class="btn" href="https://careers.cipla.com/search/?createNewAlert=false&amp;q=&amp;locationsearch=&amp;optionsFacetsDD_location=&amp;optionsFacetsDD_dept=&amp;optionsFacetsDD_country=" target="_blank" style="opacity: 1; transform: translate(0px, 0px);">Opening Positions</a> <a alt="Life At Cipla" class="btn" href="/careers/life-at-cipla" style="opacity: 1; transform: translate(0px, 0px);">Life At Cipla</a> <a alt="Recruitment Fraud" class="btn" href="/careers" style="opacity: 1; transform: translate(0px, 0px);">Recruitment Fraud</a></div>
+</div>
+
+<figure class="reusable-section-one-image"><img alt="great-place-image" src="/themes/cipla_theme/images/great-place-image.svg"></figure></div>
+
+                                  
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>123 Medical Drive, Health City</p>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Email: care@careplus.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Hours</h4>
+                    <p>Mon - Fri: 8am - 9pm</p>
+                    <p>Sat: 9am - 6pm</p>
+                    <p>Sun: 10am - 4pm</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Insurance Info</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2026 CarePlus Pharmacy. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+
+<div class="sticky-wrapper" id="stickyFormWrapper">
+    <div class="sticky-tab" onclick="toggleForm()">
+        ✉ QUICK CONTACT
+    </div>
+    
+    <div class="sticky-form-content">
+        <span class="close-btn" onclick="toggleForm()">&times;</span>
+        <h4>How can we help?</h4>
+        <p style="font-size: 0.8rem; color: #666; margin-bottom: 15px;">Leave your details and we'll call you back.</p>
+        <form action="https://formspree.io/f/mgovywgv" method="POST">
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="email" name="_replyto" placeholder="Email Address" required>
+    <input type="tel" name="phone" placeholder="Phone Number" required>
+    
+    <input type="hidden" name="_subject" value="New Pharmacy Inquiry">
+    
+    <button type="submit" class="btn btn-blue">Submit</button>
+</form>
+    </div>
+</div>
+
+
+
+<script>
+    function toggleForm() {
+        const wrapper = document.getElementById('stickyFormWrapper');
+        wrapper.classList.toggle('active');
+    }
+
+    // Optional: Close the form if user clicks outside of it
+    window.onclick = function(event) {
+        const wrapper = document.getElementById('stickyFormWrapper');
+        if (wrapper.classList.contains('active') && !wrapper.contains(event.target)) {
+            wrapper.classList.remove('active');
+        }
+    }
+	
+	
+	function toggleMobileMenu() {
+    const menu = document.getElementById('nav-menu');
+    menu.classList.toggle('active');
+}
+	
+</script>
+</body>
+</html>
